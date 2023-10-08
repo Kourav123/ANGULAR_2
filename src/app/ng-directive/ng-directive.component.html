@@ -1,0 +1,19 @@
+<p>ng-directive works!</p>
+<div *ngIf="showContent">
+    <p>This content is shown when showContent is true.</p>
+  </div>
+
+  <ul>
+    <li *ngFor="let item of items">{{ item }}</li>
+  </ul>
+  <p [ngClass]="{'red-text': applyRedColor}">This text can be red.</p>
+
+  <p [ngStyle]="textStyle">This text is bold and blue.</p>
+
+  <div [ngSwitch]="selectedValue">
+    <p *ngSwitchCase="'option1'">Option 1 is selected.</p>
+    <p *ngSwitchCase="'option2'">Option 2 is selected.</p>
+    <p *ngSwitchDefault>Default option is selected.</p>
+  </div>
+  
+  
